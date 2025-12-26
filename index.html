@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEM ASRAM BCA RESULT (2ND YEAR)</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;          /* PAGE MARGIN */
+            background-color: white;
+            color: black;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;    /* SPACE BELOW HEADING */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .result-image {
+            max-width: 95%;
+            height: auto;
+            margin: 20px 0;         /* IMAGE MARGIN */
+            padding: 15px;          /* INNER SPACE */
+            border: 1px solid black;
+        }
+
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 16px;
+            background-color: white;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .print-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Hide button while printing */
+        @media print {
+            .print-button {
+                display: none;
+            }
+
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>IEM ASRAM BCA RESULT (2ND YEAR)</h1>
+    </header>
+
+    <div class="container">
+        <!-- RESULT IMAGE -->
+        <img 
+            src="final_result_3rd_sem.png" 
+            alt="BCA Result Statement of Grades"
+            class="result-image"
+        >
+    </div>
+
+    <button class="print-button" onclick="window.print()">Print</button>
+
+</body>
+</html>
